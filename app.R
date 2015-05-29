@@ -23,6 +23,7 @@ standings <- standings[order(-standings$Wins, -standings$Runs), ]
 
 #shiny app
 ui <- fluidPage(
+  titlePanel("2015 Burt Men's Softball Schedule and Standings"),
   tableOutput("schedule"),
   tableOutput("standings")
 )
